@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Di'Pratass</title>
+    <style>
+      
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    a{
+        text-decoration: none ;
+        color: black;
+    }
+    html{
+        overflow: hidden;
+    }
+    body{
+        font-family: arial;
+        background: url(fundo.jpg);
+        width: 100%;
+        height: 100%;
+        max-width: 800px;
+        max-height: 600px;
+        background-size: cover;
+        object-position: center;
+    }
+    ul{
+        list-style: none;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    nav{
+        background-color: rgba(16,16,16,.5);
+        width: 350px;
+        height: 100%;
+        left: -350px;
+        position: absolute;
+        transition: all .5s;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        transform: translateX(350px);
+    }
+    ul{
+        top: 70px;
+        position: absolute;
+        width: 100%;
+    }
+    a{
+        display: block;
+        padding: 20px 5px;
+        color: white;
+    }
+    a:hover{
+        background-color: rgb(176,224,230);
+        color: rgb(12, 2, 9);
+    }
+    label{
+        padding: 10px 20px;
+        width: 310px;
+        text-align: center;
+        color: rgb(248, 242, 242);
+        background: rgb(250, 23, 231);
+        border: 1px solid #555;
+        border-radius: 5px;
+        user-select: none;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+        font-size: 15px;
+    }
+    label:hover{
+        background: rgb(250, 23, 231);transition: background1s ;
+    }
+    h1{
+        text-align: center;
+        color: rgb(247, 36, 183);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 80px;
+
+    }
+    h2{
+        color: rgb(245, 21, 189);
+        font-style: italic;
+        font-size: 30px;
+    }
+    
+    div{
+        position: absolute; bottom: 0px; width: 100%; text-align: right;
+        display: flex;
+        font-size: 30px;
+        color: rgb(38, 10, 197);  
+    }
+   
+
+    </style>
+</head>
+<body>
+    
+    
+    <h1>Loja Online Di'Pratass</h1>
+   
+    <input type="checkbox" id="chec" >
+    <label for="chec">Galeria de Jóias</label>
+    <nav>
+        <ul>
+           <li><a href="brinco.html">Brinco</a></li>
+           <li><a href="corrente.html">Corrente</a></li>
+           <li><a href="pulseira.html">Pulseira</a></li>
+           <li><a href="tornozeleira.html">Tornozeleira</a></li>
+           <li><a href="anel.html">Anel</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div>
+        <a href="https://www.facebook.com/Dipratass">Facebook</a>
+        <a href="https://www.instagram.com/dipratasmodas/">Instagram</a>
+      
+    </div>
+    
+   
+   
+</body>
+</html>
